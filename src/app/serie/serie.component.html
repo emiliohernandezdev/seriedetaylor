@@ -1,0 +1,39 @@
+<div>
+    <div class="input-field col s6">
+          <input  [(ngModel)]="numero1" placeholder="Ingrese X" type="text" class="validate">
+          <label for="first_name">Ingrese un numero:</label>
+      </div>
+  <br/>
+  <div class="input-field col s6">
+      <input  [(ngModel)]="presicion" placeholder="Ingrese N" type="text" class="validate">
+      <label for="first_name">Ingrese la presision:</label>
+  </div>
+  <br/>
+  <div class="row">
+      <div class="col s6">
+          <button (click)="serieSeno()" class="btn waves-effect waves-light purple accent-1">Calcular Seno</button> <br/><br/>
+          <button (click)="serieCoseno()" class="btn waves-effect waves-light purple accent-1">Calcular Coseno</button> <br/><br/>
+          <button (click)="serieTangente()" class="btn waves-effect waves-light purple accent-1">Calcular Tangente</button> <br/><br/>
+          <button (click)="serieSecante()" class="btn waves-effect waves-light purple accent-1">Calcular Secante</button> <br/><br/>
+          <button (click)="serieCosecante()" class="btn waves-effect waves-light purple accent-1">Calcular Cosecante</button> <br/><br/>
+          <button (click)="serieArcSin()" class="btn waves-effect waves-light purple accent-1">Calcular Arco Seno</button> <br/><br/>
+          <button (click)="serieArcTan()" class="btn waves-effect waves-light purple accent-1">Calcular Arco Tangente</button> <br/><br/>
+          <button (click)="serieLn1()" class="btn waves-effect waves-light purple accent-1">Calcular Ln de 1 + x</button> <br/><br/>
+      </div>
+      <div class="col s6">
+          <button (click)="serieSinH()" class="btn waves-effect waves-light purple accent-1">Calcular Seno Hiperbola</button> <br/><br/>
+          <button (click)="serieCosH()" class="btn waves-effect waves-light purple accent-1">Calcular Coseno Hiperbola</button> <br/><br/>
+          <button (click)="serieTanH()" class="btn waves-effect waves-light purple accent-1">Calcular Tangente Hiperbola</button> <br/><br/>
+          <button (click)="serieSinH1()" class="btn waves-effect waves-light purple accent-1">Calcular Seno Hiperbola Inversa</button> <br/><br/>
+          <button (click)="serieTanH1()" class="btn waves-effect waves-light purple accent-1">Calcular Tangente Hiperbola Inversa</button> <br/><br/>
+          <button (click)="serieWo()" class="btn waves-effect waves-light purple accent-1">Calcular Serie de Wo</button> <br/> <br/>
+          <button (click)="serieExp()" class="btn waves-effect waves-light purple accent-1">Calcular Funcion Exponencial</button> <br/> <br/>
+          <button (click)="serieLn()" class="btn waves-effect waves-light purple accent-1">Calcular Ln X</button> <br/> <br/>
+      </div>
+    </div>
+    <label for="disabled">La respuesta es:</label>
+  <div class="input-field col s12">
+      <input disabled value="{{ respuesta }}" id="disabled" type="text" class="validate">
+      <button (click)="limpiar()" class="btn waves-effect waves-light red darken-4">Limpiar</button> <br/>
+    </div>
+  </div>
